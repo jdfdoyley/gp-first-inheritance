@@ -16,5 +16,13 @@ public class ShapeDemo
         Console.WriteLine(
             "Jason D'Oyley - Week 5 GP - First Inheritance\n"
         );
+
+        // Instantiate Shape and Rectangle objects
+        Shape s = new Shape("Blue");
+        Rectangle r = new Rectangle("Orange", 5, 10);
+
+        // Print each object's properties
+        s.PrintShape();
+        r.PrintRectangle();
     }
 }
