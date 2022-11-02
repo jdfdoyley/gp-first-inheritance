@@ -29,7 +29,7 @@ public class Rectangle : Shape
         // Print the Rectangle's information - use the base class property
         // "Color" to print the inherited color information
         Console.WriteLine(
-            "This is a Rectangle.\n  Color: {0}\n  Length: {1}\n  Width:{2}\n",
+            "This is a Rectangle.\n  Color: {0}\n  Length: {1}\n  Width: {2}\n",
             Color, Length, Width
         );
     }

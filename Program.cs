@@ -24,5 +24,19 @@ public class ShapeDemo
         // Print each object's properties
         s.PrintShape();
         r.PrintRectangle();
+
+        // Demonstrate calling a base class method from a derived class object
+        r.PrintShape();
+
+        // Update the objects' properties
+        s.Color = "Green";
+
+        r.Color = "Red";    // base class property
+        r.Length = 2;
+        r.Width = 4;
+
+        // Print each object's properties
+        s.PrintShape();
+        r.PrintRectangle();
     }
 }
