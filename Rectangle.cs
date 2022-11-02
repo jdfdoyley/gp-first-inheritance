@@ -2,8 +2,35 @@
 * Name: Jason D. F. D'Oyley
 * Date: November 01, 2022
 * Assignment CIS214 Week 5 GP - First Inheritance
+*
+* Rectangle class.
+* This is the derived class that provides the specific information for a
+* rectangle. In this case, the specific information we care about is the
+* rectangle's length and width. Note that because this is derived from Shape, it
+* also has access to the base class's public property.
 \******************************************************************************/
-public class Rectangle
+public class Rectangle : Shape
 {
+    // Class properties
+    public int Length { get; set; }
+    public int Width { get; set; }
 
+    // Constructor - note that the parameter color is used to call the base
+    // class's constructor using the keyword "base"
+    public Rectangle(string color, int length, int width) : base(color)
+    {
+        Length = length;
+        Width = width;
+    }
+
+    // Function to print the Rectangle's information
+    public void PrintRectangle()
+    {
+        // Print the Rectangle's information - use the base class property
+        // "Color" to print the inherited color information
+        Console.WriteLine(
+            "This is a Rectangle.\nColor: {0}\nLength: {1}\nWidth:{2}\n",
+            Color, Length, Width
+        );
+    }
 }
